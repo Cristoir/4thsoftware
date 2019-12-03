@@ -10,10 +10,10 @@ public class Course {
     private DateTime endDate;
     
     
-    public Course(String name, DateTime start, DateTime end){
+    public Course(String name, DateTime startDate, DateTime endDate){
         this.name = name;
-        this.start = start;
-        this.end = end;
+        this.startDateDate = start;
+        this.endDateDate = end;
     }
     
      public String getName() {
@@ -37,7 +37,7 @@ public class Course {
    }
     
      public boolean addModule( Module newModule ) {
-      modulues.add( newModule );
+      modules.add( newModule );
       return true;
    }
 }

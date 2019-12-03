@@ -8,15 +8,15 @@ public class Student {
 	private int ID;
 	private String userName;
 	private ArrayList<Module> modules = new ArrayList();
-	private ArrayList<Course> courses = new ArrayList();
+	private ArrayList<Course> course = new ArrayList();
 	
-	public Student(String name, int age, int DOB, int ID, Course course) {
+	public Student(String name, int age, int DOB, int ID) {
 		this.name = name;
 		this.age = age;
 		this.DOB = DOB;
 		this.ID = ID;
 		this.userName = setUserName(name, age);
-		this.course = course;
+		
 	}
 
 	
@@ -28,12 +28,12 @@ public class Student {
 	
   public boolean addModule( Module newModule ) {
       modules.add( newModule );
-      module.addStudent(this);
+      Module.addStudent(this);
       return true;
    }
     
     public boolean addCourse( Course newCourse ){
-        courses.add(newCourse);
+        course.add(newCourse);
         
         return true;
     }
