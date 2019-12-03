@@ -12,8 +12,8 @@ public class Course {
     
     public Course(String name, DateTime startDate, DateTime endDate){
         this.name = name;
-        this.startDateDate = start;
-        this.endDateDate = end;
+        this.startDate = startDate;
+        this.endDate = endDate;
     }
     
      public String getName() {
