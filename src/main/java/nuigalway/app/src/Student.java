@@ -8,7 +8,7 @@ public class Student {
 	private int ID;
 	private String userName;
 	private ArrayList<Module> modules = new ArrayList();
-	private Course course;
+	private ArrayList<Course> courses = new ArrayList();
 	
 	public Student(String name, int age, int DOB, int ID, Course course) {
 		this.name = name;
@@ -26,6 +26,16 @@ public class Student {
 	}
 
 	
-
+  public boolean addModule( Module newModule ) {
+      modules.add( newModule );
+      module.addStudent(this);
+      return true;
+   }
+    
+    public boolean addCourse( Course newCourse ){
+        courses.add(newCourse);
+        
+        return true;
+    }
 	
 }
