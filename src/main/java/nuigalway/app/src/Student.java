@@ -28,7 +28,7 @@ public class Student {
 	
   public boolean addModule( Module newModule ) {
       modules.add( newModule );
-      Module.addStudent(this);
+      
       return true;
    }
     
