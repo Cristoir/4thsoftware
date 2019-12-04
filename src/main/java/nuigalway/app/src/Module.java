@@ -1,3 +1,5 @@
+package nuigalway.app.src;
+
 import java.util.ArrayList;
 
 public class Module {
